@@ -16,13 +16,6 @@ if(mark >= 0 && mark < 50){
     document.write('A+')
 }else{
     document.write("invalid input")
-}
+};
 
 
-const pi = 3.14;
-
-const radius = 20;
-
-const circumference = 2 * pi * radius
-
-document.write(`<br> the circumference is: ${circumference}`  )
