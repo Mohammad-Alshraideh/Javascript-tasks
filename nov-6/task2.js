@@ -1,11 +1,8 @@
-for (let i = 1; i <= 10; i++) {
-if (i == 1) {
-    document.write(i + '<br>')
-}else if(i == 3) {
-    document.write(i + '<br>')
-  }else if(i == 6) {
-    document.write(i + '<br>')
-  }else{
-    document.write(i + ' ')
-  }
+let count = 0
+for (let i = 0; i <= 3; i++) {
+    for (let j = 0; j <= i; j++) {
+       count++
+       document.write(count +  " ")
+    }
+   document.write('<br>')
 }
