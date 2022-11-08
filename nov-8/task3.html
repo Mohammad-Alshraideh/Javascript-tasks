@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="filters">
+        <select name="fonts" id="fonts" onchange="font(this)">
+            <option value="arial">Arial</option>
+            <option value="sans">OpenSans</option>
+            <option value="fantasy" selected>Fantasy</option>
+        </select>
+
+
+        <select name="size" id="size" onchange=" sizer(this)"></select>
+
+
+       <label for="italic" >Italic</label>
+        <input type="checkbox" id="italic"  class="box" name="fontStyle" onchange="checkb(this)" >
+        <label for="bold">Bold</label>
+        <input type="checkbox" id="bold" class="box" onchange="checkb(this)" name="fontWeight">
+        <label for="underline" >Underline</label>
+        <input type="checkbox" id="underline" class="box" name = 'textDecoration' onchange="checkb(this)"  >
+    </div>
+    <p id="paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui neque harum corporis necessitatibus sapiente, laboriosam aliquam dolor ab perferendis repellat maiores quibusdam voluptates pariatur. At sunt sapiente velit sit?</p>
+
+
+    <script src="task3.js"></script>
+</body>
+</html>
