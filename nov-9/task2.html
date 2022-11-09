@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="display: grid; grid-template-columns:20%">
+        <div>
+            <label for="subject">subject:</label>
+            <input type="text" id="subject" onchange="setInp(this) ">
+        </div>
+        <div>
+            <label for="description">description:</label>
+            <textarea name="" id="description" cols="30" rows="10" onchange="setInp(this) "></textarea>
+        </div>
+        <div>
+            <label for="userTypes">User Types:</label>
+          <label for="type1">type1</label>  <input type="checkbox" name="type1" id="type1" onchange="setBox(this)">
+          <label for="type2">type2</label>   <input type="checkbox" name="type2" id="type2" onchange="setBox(this)">
+          <label for="type3">type3</label>   <input type="checkbox" name="type3" id="type3" onchange="setBox(this)">
+        </div>
+        <div>
+            <label for="tech">Technology Used:</label>
+            <input type="text" onchange="setInp(this) " id="tech">
+        </div>
+        
+    </form>
+    <button onclick="subm()">submit</button>
+<div id="card">
+    <p id="sub"> </p> <br>
+    <p id="des"> </p>
+    <ul style="list-style-type: none;padding: 0;">
+      User Types:
+      <li id="typeA"></li>
+      <li id="typeB"></li>
+      <li id="typeC"></li>
+    </ul>
+    <p id="technology"> </p>
+</div>
+    <script src="task2.js"></script>
+</body>
+</html>
